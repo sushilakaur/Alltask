@@ -1,5 +1,8 @@
 *{ 
     margin: 0;}
+body{
+    background-color:#F7F9F9 ;
+}
 .banner_bg{
     position: absolute;
     margin-top: 0%;
