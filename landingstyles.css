@@ -1,19 +1,44 @@
-*{ 
-    margin: 0;}
-body{
+* { 
+  margin: 0;
+}
+
+body {
     background-color:#F7F9F9 ;
 }
-.banner_bg{
+
+button {
+    background-color:#F7F9F9 ;
+    color: #086970 ;
+    border-radius: 30px !important;
+    border: none;
+    font-weight: bold;
+    transition: ease-in;
+}
+
+button:hover{
+    background-color: #F7F9F9 ;
+    color: #086970 ;
+    border-width: 10px;
+    border-color:  #F7F9F9 ;
+    box-shadow: 0 3px 15px 0 rgba(15, 15, 15, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner_bg {
     position: absolute;
     margin-top: 0%;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
-.header h1{
+
+.container {
     margin-left: 100px;
+}
+
+.header h1 {
+    /* margin-left: 100px; */
     margin-right: 100px;
-    padding-top: 120px;
+    padding-top: 70px;
     position: relative;
     font-family: monospace;
     font-size: 80px;
@@ -21,11 +46,13 @@ body{
     color: #F7F9F9;
     margin-block-end: 10px;    
 }
-.header h1:hover{
+
+.header h1:hover {
     text-shadow: 0px 0px 5px #bcd9db;
 }
-.header p{
-    margin-left: 100px;
+
+.header p {
+    /* margin-left: 100px; */
     margin-right: 100px;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -35,30 +62,58 @@ body{
     text-align: left;
     margin-right: 55%;   
 }
-.header button{
-    margin-left: 100px;
+
+.start{
+    /* margin-left: 100px; */
     margin-right: 100px;
     padding-top: 30px;
     padding: 15px;
-    background-color:#F7F9F9 ;
-    color:#086970 ;
-    border-radius: 30px;
     margin-top: 20px;
-    border: none;
-    font-weight: bold;
-    transition: ease-in;
 }
-.header button:hover{
-    background-color:#F7F9F9 ;
-    color:#086970 ;
-    border-width: 10px;
-    border-color: #F7F9F9 ;
-    border-radius: 30px;
-    box-shadow: 0 3px 15px 0 rgba(15, 15, 15, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
+
 .section2 img{
     width: 520px;
     height: 400px;
     margin-top: 180px;
     padding: 50px;
+}
+
+.nav {
+    padding-top: 0.5%;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;s
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-content ul li a{
+    color: #F7F9F9;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+
+.active{ 
+    background-color : #0b8d96;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.signin {
+    float: right;
+    margin: 0;
+    padding: 0;
 }
