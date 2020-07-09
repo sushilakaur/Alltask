@@ -96,14 +96,16 @@ header .sticky ul li a{
 .headercontainer button{
     margin-left: 100px;
     padding-top: 30px;
-    padding: 15px;
+    padding: 17px;
     background-color:#F7F9F9 ;
     color:#086970 ;
+    font-size: 20px;
     border-radius: 30px;
     margin-top: 20px;
     border: none;
     font-weight: bold;
     transition: ease-in;
+    font-stretch: extra-expanded;
 }
 
 .headercontainer button:hover{
@@ -142,6 +144,27 @@ header .sticky ul li a{
     float: left;
     width: 505px;
     height: 400px;
+}
+
+.section2 button{
+    padding-top: 30px;
+    padding: 15px;
+    color:#F7F9F9 ;
+    background-color:#086970 ;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    transition: ease-in;
+}
+
+.section2 button:hover{
+    color:#F7F9F9 ;
+    background-color:#086970 ;
+    border-width: 10px;
+    border-color: #F7F9F9 ;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px 0 rgba(15, 15, 15, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer{
