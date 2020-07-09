@@ -6,7 +6,7 @@ body {
     background-color:#F7F9F9 ;
 }
 
-button {
+.banner button {
     background-color:#F7F9F9 ;
     color: #086970 ;
     border-radius: 30px !important;
@@ -15,7 +15,7 @@ button {
     transition: ease-in;
 }
 
-button:hover{
+.banner button:hover{
     background-color: #F7F9F9 ;
     color: #086970 ;
     border-width: 10px;
@@ -83,12 +83,9 @@ button:hover{
     padding-top: 0.5%;
     position: -webkit-sticky;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    margin-top: 0;
     width: 100%;
     height: 10%;
-    margin: 0 auto;s
 }
 
 .nav ul{
@@ -96,24 +93,93 @@ button:hover{
     display: flex;
 }
 
+.nav ul li {
+    padding-left: 3%;
+}
+
 
 .nav-content ul li a{
     color: #F7F9F9;
     font-family: monospace;
     font-size: 30px;
+    float: right;
 }
 
 
 .active{ 
     background-color : #0b8d96;
     width: 100%;
-    margin: 0 auto;
+    margin-left: 0 !important;
 }
 
 
+.section2 {
+    margin-top: 150px;
+    color: #086970;
+    background-color: #F7F9F9;
+}
 
-.signin {
+.section2 img {
+    margin-top: 40px;
+    width: 505px;
+    height: 400px;
+}
+
+.txt{
+    width: 50vw;
+    margin: 100px 50px;
+}
+
+
+.planner img{
+    float: left;
+}
+
+.planner-text {
     float: right;
-    margin: 0;
-    padding: 0;
 }
+
+.attendance img{
+    float: right;
+}
+
+.attendance-text {
+    float: left;
+}
+
+.finance img{
+    float: left;
+}
+
+.finance-text{
+    float: right;
+}
+
+.section2 button{
+    padding-top: 30px;
+    padding: 15px;
+    color:#F7F9F9 ;
+    background-color:#086970 ;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    transition: ease-in;
+}
+
+.section2 button:hover{
+    color:#F7F9F9 ;
+    background-color:#086970 ;
+    border-width: 10px;
+    border-color: #F7F9F9 ;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px 0 rgba(15, 15, 15, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+

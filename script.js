@@ -1,6 +1,6 @@
 console.log("Hello! ");
 
-const nav = document.querySelector(".nav-bar");
+const nav = document.querySelector(".nav");
 
 console.log(nav);
 
