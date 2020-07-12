@@ -26,14 +26,12 @@ body{
     margin: 10px;
 }
 
-
 .nav ul li a{
     margin-left: 3vw;
     color: #F7F9F9;
     font-family: monospace;
     font-size: 25px;
 }
-
 
 .icon{
     margin-left: 45px;
