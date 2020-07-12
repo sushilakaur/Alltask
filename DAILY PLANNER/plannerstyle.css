@@ -13,6 +13,7 @@ body{
     background-color: #0b8d96;
     width : 100%;
     align-content: center;
+    z-index: 1;
 }
 
 .nav ul{
@@ -36,7 +37,6 @@ body{
     float: right;
     width: 60px;
     height: 60px;
-
 }
 
 .container{
@@ -76,7 +76,7 @@ body{
     padding-top: 5%;
       padding: 1.5%;
       color:#F7F9F9 ;
-      background-color:#0b8d96 ;
+      background-color:#0b8d96 !important;
       border-radius: 30px;
       margin-top: 3%;
       border: none;
@@ -98,26 +98,49 @@ body{
     box-shadow: 0 3px 15px 0 rgba(15, 15, 15, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.to-do-pic{
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 40%;
+.parallax {
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.habit-pic{
+.img {
     width: 100%;
-    margin-top: 40%;
+    height: 75vh;
+    margin-top: 5%;
     margin-bottom: 40%;
+    align-content: center;
 }
 
-.event-pic{
-    width: 100%;
-    margin-top: 40%;
-    margin-bottom: 30%;
+.to-do {
+    background-image : url(pictures/parallax-07.png);    
 }
+
+.habit-tracker{
+    background-image: url(pictures/parallax-08.png);
+}
+
+.event{
+    background-image: url(pictures/parallax-06.png);
+}
+
+.middle {
+    text-align: center;
+    z-index: 1;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.text {
+    border: #fff 2px solid;
+    font-size: 64px;
+    color: #fff;
+    padding: 15px 15px;
+}
+
+
+
 
 .footer{
     margin-top: 40%;
