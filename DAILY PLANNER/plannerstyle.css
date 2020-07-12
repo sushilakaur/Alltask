@@ -23,6 +23,7 @@ body{
 
 .nav ul li {
     margin-top: 10px;
+    margin: 10px;
 }
 
 
@@ -41,12 +42,6 @@ body{
     height: 60px;
 }
 
-/* .active{ 
-    background-color : #0b8d96;
-    width: 100%;
-    margin-left: 0 !important;
-} */
-
 .container{
     align-items: center;
     padding: 100px;
@@ -56,10 +51,11 @@ body{
     text-align: center;
     text-decoration: underline;
     color:#0b8d96 ;
-    font-size: 60px;
+    font-size: 400%;
     font-family: sans-serif;
     font-weight: bold;
-    margin-top: 70px;
+    margin-top: 7%;
+    margin-bottom: 5%;
 }
 
 .container h1:hover {
@@ -72,7 +68,7 @@ body{
       color:#F7F9F9 ;
       background-color:#0b8d96 ;
       border-radius: 30px;
-      margin-top: 0px;
+      margin-top: 10%;
       border: none;
       font-weight: bold;
       transition: ease-in;
@@ -80,17 +76,17 @@ body{
 }
 
 .container button{
-    padding-top: 30px;
-      padding: 15px;
+    padding-top: 5%;
+      padding: 1.5%;
       color:#F7F9F9 ;
       background-color:#0b8d96 ;
       border-radius: 30px;
-      margin-top: 20px;
+      margin-top: 3%;
       border: none;
       font-weight: bold;
       transition: ease-in;
       text-align: center;
-      font-size: 20px;
+      font-size: 130%;
 }
 .container li{
     list-style: none;
@@ -107,26 +103,30 @@ body{
 
 .to-do-pic{
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 40%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .habit-pic{
     width: 100%;
-    margin-top: 600px;
-    margin-bottom: 600px;
+    margin-top: 40%;
+    margin-bottom: 40%;
 }
 
-.habit-pic{
+.event-pic{
     width: 100%;
-    margin-top: 600px;
-    margin-bottom: 50px;
+    margin-top: 40%;
+    margin-bottom: 30%;
 }
 
 .footer{
-    margin-top: 600px;
+    margin-top: 40%;
     align-items: center;
     text-align: center;
-    padding: 70px;
+    padding: 7%;
     background-color:#0b8d96 ;
     left: 0;
     color:#F7F9F9 ;
@@ -134,5 +134,5 @@ body{
 }
 
 .footer h1{
-    padding-bottom: 50px;
+    padding-bottom: 3%;
 }
