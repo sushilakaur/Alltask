@@ -92,7 +92,7 @@
       margin-top: 0;
       width: 100%;
       height: 10%;
-      text-decoration: none;
+      align-content: center;
   }
   
   .nav ul{
@@ -100,16 +100,15 @@
       display: flex;
   }
   
-  .nav ul li {
-      padding-left: 3%;
-  }
-  
+ 
   
   .nav-content ul li a{
       color: #F7F9F9;
       font-family: monospace;
       font-size: 30px;
       float: right;
+      margin-left: 3vw;
+      vertical-align: middle;
   }
   
   
