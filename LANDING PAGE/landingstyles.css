@@ -87,7 +87,7 @@
   }
   
   .nav {
-      padding-top: 0.5%;
+      padding-top: 0.8%;
       position: fixed;
       margin-top: 0;
       width: 100%;
@@ -105,7 +105,7 @@
   .nav-content ul li a{
       color: #F7F9F9;
       font-family: monospace;
-      font-size: 30px;
+      font-size: 27px;
       float: right;
       margin-left: 3vw;
       vertical-align: middle;
