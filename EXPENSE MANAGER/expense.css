@@ -114,7 +114,7 @@ body {
     z-index: -1;
 }
 
-.right-container .title{
+.right-container .dash-title{
     display: inline-block;
     color: #0b8d96;
     font-size: 100px;
@@ -130,7 +130,7 @@ body {
     margin-left: 20px;
 }
 
-.toggle .tab1-exp, .tab2-inc, .tab3-all{
+.toggle .tab1, .tab2, .tab3{
     display: inline-block;
     cursor: pointer;
     font-size: 30px;
@@ -139,7 +139,7 @@ body {
     opacity: 0.4;
 }
 
-.toggle .tab2-inc, .tab3-all{
+.toggle .tab2, .tab3{
     margin-left: 10px;
 }
 
@@ -154,19 +154,19 @@ body {
 
 .right-container input{
     /* MAKE INPUT SELECTABLE */
-    -webkit-user-select: auto;
+    -webkit-user-select: auto;      
     -moz-user-select: auto;
     -ms-user-select: auto;
     user-select: auto;
 }
 
 /* ////////// ALL ///////////// */
-.right-container #all-list{
+.right-container #all{
     width: auto;
     height: auto;
     position: relative;
 }
-.right-container #all-list ul{
+.right-container #all ul{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -174,17 +174,17 @@ body {
     overflow-x: auto;
 }
 
-.right-container #all-list ul.list li{
+.right-container #all ul.list li{
     position: relative;
     font-size: 20px;
 }
 
-.right-container #all-list ul.list li *{
+.right-container #all ul.list li *{
     display: inline-block;
     vertical-align: middle;
 }
 
-.right-container #all-list ul.list li .entry{
+.right-container #all ul.list li .entry{
     height: auto;
     padding-left: 20px;
     margin-bottom: 10px;;
@@ -192,11 +192,11 @@ body {
     font-family: sans-serif;
 }
 
-.right-container #all-list ul.list li #edit{
+.right-container #all ul.list li #edit{
     visibility: hidden;
 }
 
-.right-container #all-list ul.list li #delete{
+.right-container #all ul.list li #delete{
     position: absolute;
     width: 8px;
     height: 20px;
@@ -208,18 +208,18 @@ body {
 }
 
 
-.right-container #all-list ul.list li.expense-list{
+.right-container #all ul.list li.expense{
     color: #f0624d;
 }
 
 /* //////// EXPENSE ////////// */
-.right-container #expense-list{
+.right-container #expense{
     width: auto;
     height: auto;
     position: relative;
 }
 
-.right-container #expense-list .input{
+.right-container #expense .input{
     position: absolute;
     display: block;
     width: auto;
@@ -227,12 +227,12 @@ body {
     border-top: 1px solid #ccc;
 }
 
-.right-container #expense-list .input *{
+.right-container #expense .input *{
     display: inline-block;
     vertical-align: middle;
 }
 
-.right-container #expense-list .input input#expense-title-input{
+.right-container #expense .input input#expense-title-input{
     height: 40px;
     width : 27vw;
     padding-left: 10px;
@@ -244,25 +244,25 @@ body {
     border: none;
 }
 
-.right-container #expense-list .input input#expense-amount-input{
+.right-container #expense .input input#expense-amount-input{
     height: 40px;
     width : 27vw;
     padding-left: 10px;
     font-size: 20px;
     font-family: sans-serif;
     margin: 5px;
-    margin-left: 5px;
+    margin-left: -10px;
     border-radius: 0 10px 10px 0;
     border: none;
 }
 
-.right-container #expense-list .input .add-expense img{
+.right-container #expense .input .add-expense img{
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
-.right-container #expense-list ul{
+.right-container #expense ul{
     width: auto;
     height: 285px;
     list-style: none;
@@ -272,18 +272,18 @@ body {
     overflow-x: auto;
 }
 
-.right-container #expense-list ul.list li{
+.right-container #expense ul.list li{
     position: relative;
     font-size: 20px;
 }
 
-.right-container #expense-list ul.list li *{
+.right-container #expense ul.list li *{
     display: inline-block;
     height: 30px;
     vertical-align: middle;
 }
 
-.right-container #expense-list ul.list li .entry{
+.right-container #expense ul.list li .entry{
     height: auto;
     padding-left: 20px;
     margin-bottom: 10px;;
@@ -292,7 +292,7 @@ body {
     color: #f0624d;
 }
 
-.right-container #expense-list ul.list li #edit{
+.right-container #expense ul.list li #edit{
     position: absolute;
     width:20px;
     height: 20px;
@@ -303,7 +303,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.right-container #expense-list ul.list li #delete{
+.right-container #expense ul.list li #delete{
     position: absolute;
     width: 20px;
     height: 20px;
@@ -315,23 +315,23 @@ body {
 }
 
 /* /////// INCOME //////// */
-.right-container #income-list{
+.right-container #income{
     position: relative;
 }
 
-.right-container #income-list .input{
+.right-container #income .input{
     position: absolute;
     display: block;
     bottom: 0;
     border-top: 1px solid #ccc;
 }
 
-.right-container #income-list .input *{
+.right-container #income .input *{
     display: inline-block;
     vertical-align: middle;
 }
 
-.right-container #income-list .input input#income-title-input{
+.right-container #income .input input#income-title-input{
     height: 40px;
     width : 150px;
     padding-left: 10px;
@@ -343,25 +343,25 @@ body {
     border: none;
 }
 
-.right-container #income-list .input input#income-amount-input{
+.right-container #income .input input#income-amount-input{
     height: 40px;
     width : 110px;
     padding-left: 10px;
     font-size: 20px;
     font-family: sans-serif;
     margin: 5px;
-    margin-left: 5px;
+    margin-left: -10px;
     border-radius: 0 10px 10px 0;
     border: none;
 }
 
-.right-container #income-list .input .add-income img{
+.right-container #income .input .add-income img{
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
-.right-container #income-list ul{
+.right-container #income ul{
     width: 360px;
     height: 285px;
     list-style: none;
@@ -371,18 +371,18 @@ body {
     overflow-x: auto;
 }
 
-.right-container #income-list ul.list li{
+.right-container #income ul.list li{
     position: relative;
     font-size: 20px;
 }
 
-.right-container #income-list ul.list li *{
+.right-container #income ul.list li *{
     display: inline-block;
     height: 30px;
     vertical-align: middle;
 }
 
-.right-container #income-list ul.list li .entry{
+.right-container #income ul.list li .entry{
     width:250px;
     height: auto;
     padding-left: 20px;
@@ -391,7 +391,7 @@ body {
     font-family: sans-serif;
 }
 
-.right-container #income-list ul.list li #edit{
+.right-container #income ul.list li #edit{
     position: absolute;
     width:20px;
     height: 20px;
@@ -402,7 +402,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.right-container #income-list ul.list li #delete{
+.right-container #income ul.list li #delete{
     position: absolute;
     width:20px;
     height: 20px;
