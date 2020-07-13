@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    margin-left: 0;
 }
 body{
     background-color: #f7f9f9 !important;
@@ -100,18 +101,6 @@ body{
     box-shadow: 0 3px 15px 0 rgba(15, 15, 15, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.buttons{
-    float: left;
-    position: absolute;
-}
-
-.task-pic img{
-    float: right;
-    height: 300px;
-    width: 600px;
-    position: relative;
-}
-
 .parallax {
     background-position: center;
     background-attachment: fixed;
@@ -120,23 +109,16 @@ body{
 }
 
 .img {
-    width: 100%;
+    margin-left: 0;
+    width: 100% !important;
     height: 75vh;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 40%;
     align-content: center;
 }
 
-.to-do {
-    background-image : url(pictures/parallax-07.png);    
-}
-
-.habit-tracker{
-    background-image: url(pictures/parallax-08.png);
-}
-
-.event{
-    background-image: url(pictures/parallax-06.png);
+.attend {
+    background-image : url(pictures/attend-05.png);    
 }
 
 .middle {
@@ -155,9 +137,6 @@ body{
     padding: 15px 15px;
 }
 
-
-
-
 .footer{
     margin-top: 40%;
     align-items: center;
@@ -172,3 +151,4 @@ body{
 .footer h1{
     padding-bottom: 3%;
 }
+
