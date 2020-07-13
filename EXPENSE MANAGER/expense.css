@@ -116,11 +116,12 @@ body {
 
 .right-container .dash-title{
     display: inline-block;
-    color: #212829;
+    color: #0b8d96;
     font-size: 100px;
     margin-left: 20px;
     margin-top: 30px;
     font-family: sans-serif;
+    font-weight: bolder;
 }
 
 .toggle{
@@ -197,11 +198,11 @@ body {
 
 .right-container #all ul.list li #delete{
     position: absolute;
-    width:20px;
+    width: 8px;
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url("pictures/trash.png");
+    background-image: url("pictures/trash-07.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -297,18 +298,18 @@ body {
     height: 20px;
     right: 50px;
     cursor: pointer;
-    background-image: url("pictures/edit.png");
+    background-image: url("pictures/edit-07.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
 
 .right-container #expense ul.list li #delete{
     position: absolute;
-    width:20px;
+    width: 20px;
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('pictures/trash.png');
+    background-image: url('pictures/trash-07.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -396,7 +397,7 @@ body {
     height: 20px;
     right: 50px;
     cursor: pointer;
-    background-image: url("pictures/edit.png");
+    background-image: url("pictures/edit-07.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -407,7 +408,22 @@ body {
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('pictures/trash.png');
+    background-image: url('pictures/trash-07.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
+}
+
+.footer{
+    margin-top: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+    background-color:#0b8d96 ;
+    left: 0;
+    color:#F7F9F9 ;
+    font-size: 20px;
+}
+
+.footer h1{
+    padding-bottom: 3%;
 }
