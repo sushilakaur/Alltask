@@ -48,61 +48,54 @@
           <h3>July 2020</h3>
         </div>
       </div>
+
       <div class="expense-tracker">
 
         <div class="col-4 left-container">
         </div>
 
         <div class="col-8 right-container">
-          <div class="dash-title">Dashboard</div>
+          <div class="right-container-title">Dashboard</div>
             <div class="toggle">
-                <div class="tab1 active ">Expenses</div>
-                <div class="tab2">Income</div>
-                <div class="tab3">All</div>
+                <div class="expense-tab">Expenses</div>
+                <div class="income-tab">Income</div>
+                <div class="all-tab active">All</div>
             </div>
-            <div class="hide" id="income">
+
+            <div class="hide" id="expense-list">
+              <ul class="list">
+              </ul>
+              <div class="input">
+                  <input type="text" id="expense-title-input" name="title" placeholder="Title">
+                  <input type="number" id="expense-amount-input" name="amount" placeholder="Rs. 0">
+                  <div class="add-expense"><img src="pictures/plus-07.png" alt=""></div>
+              </div>
+            </div>
+
+            <div class="hide" id="income-list">
+                <ul class="list">
+                </ul>
                 <div class="input">
                     <input type="text" id="income-title-input" name="title" placeholder="Title">
                     <input type="number" id="income-amount-input" name="amount" placeholder="Rs. 0">
                     <div class="add-income"><img src="pictures/plus-07.png" alt=""></div>
                 </div>
             </div>
-            <div id="expense">
+            
+            <div id="all-list">
                 <ul class="list">
-                  <li class="expense" id="0">
-                    <div class="entry">Salary : Rs 100000</div>
-                    <div id="edit"></div>
-                    <div id="delete"></div>
-                  </li>
-                </ul>
-                <div class="input">
-                    <input type="text" id="expense-title-input" name="title" placeholder="Title">
-                    <input type="number" id="expense-amount-input" name="amount" placeholder="Rs. 0">
-                    <div class="add-expense"><img src="pictures/plus-07.png" alt=""></div>
-                </div>
-            </div>
-            <div class="hide" id="all">
-                <ul class="list">
-                  <li class="expense" id="0">
-                    <div class="entry">Salary : Rs 100000</div>
-                    <div id="edit"></div>
-                    <div id="delete"></div>
-                    <p> HELLO EVERYONE</p>
-                  </li>
-                  <li class="income" id="1">
-                    <div class="entry">Food : Rs 100</div>
-                    <div id="id"></div>
-                    <div id="delete"></div>
-                  </li>
                 </ul>
             </div>
         </div>
       </div>
-      <div class="footer">
+
+      <!-- <div class="footer">
         <h1>CONTACT US</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, porro incidunt a vero voluptatem 
             molestias obcaecati soluta dolores quaerat quam unde velit accusamus eaque sed tempora laudantium voluptas 
             deserunt!</p>
-      </div>
+      </div> -->
+
+      <script src="expense.js"></script>
 </body>
 </html>
