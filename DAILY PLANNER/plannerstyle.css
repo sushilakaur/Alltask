@@ -131,9 +131,9 @@ body{
     background-image : url(pictures/parallax-07.png);    
 }
 
-.habit-tracker{
+/* .habit-tracker{
     background-image: url(pictures/parallax-08.png);
-}
+} */
 
 .event{
     background-image: url(pictures/parallax-06.png);
@@ -154,9 +154,6 @@ body{
     color: #fff;
     padding: 15px 15px;
 }
-
-
-
 
 .footer{
     margin-top: 40%;
