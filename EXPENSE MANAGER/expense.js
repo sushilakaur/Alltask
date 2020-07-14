@@ -1,6 +1,6 @@
-const expenseBtn = document.querySelector('.tab1-exp');
-const incomeBtn = document.querySelector('.tab2-inc');
-const allBtn = document.querySelector('.tab3-all');
+const expenseBtn = document.querySelector('.expense-tab');
+const incomeBtn = document.querySelector('.income-tab');
+const allBtn = document.querySelector('.all-tab');
 
 const expenseList = document.querySelector('#expense-list');
 const incomeList = document.querySelector('#income-list');
