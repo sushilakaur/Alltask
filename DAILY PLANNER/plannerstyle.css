@@ -127,7 +127,7 @@ body{
     width: 100%;
     height: 75vh;
     margin-top: 5%;
-    margin-bottom: 40%;
+    margin-bottom: 5%;
     align-content: center;
 }
 
@@ -172,4 +172,78 @@ body{
 
 .footer h1{
     padding-bottom: 3%;
+}
+
+#kritikTodo{
+     margin-bottom:30%;
+     margin-left: 300px;
+     margin-right: 300px;
+     text-align: left
+     ;
+     box-shadow: rgba(0,0,0,0.4);
+}
+
+.completed{
+    color: grey;
+    text-decoration: line-through;
+}
+
+#kritikTodo p{
+    background: #0b8d96;
+    font-size: 30px;
+    color: white;
+    margin: 0em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+}
+
+#lists{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lists li{
+    background-color:#0b8d96;
+    /* height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 20px;
+    margin-right :30px ; */
+    font-size: 25px;
+    border: 1.5px solid black;
+    color: white;
+    margin: 0em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+}
+
+#kritikTodo input{
+     font: size 30px;
+     background-color: #f7f7f7;
+     width: 100%;
+     padding: 13px 13px 13px 20px;
+     box-sizing: border-box;
+}
+
+#kritikTodo input:focus{
+    background: #fff;
+    border: 3px solid #0b8d96;
+
+}
+
+.fa-plus{
+    float: right;
+}
+
+#lists span{
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 40px;
+    display: inline-block;
 }
