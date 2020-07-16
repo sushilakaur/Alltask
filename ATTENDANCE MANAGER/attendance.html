@@ -47,7 +47,7 @@
             </h1>
         <div class="buttons">
             <ul class="header-list">
-                <li>
+                <!-- <li>
                     <button type="button" class="todo">
                         To - Do List
                     </button>
@@ -61,7 +61,7 @@
                    <button type="button" class="goals">
                         Events and Goals
                     </button>   
-                </li>               
+                </li>                -->
             </ul> 
         </div>
         </div>
@@ -73,6 +73,50 @@
                 </div>
             </div>
         </div>
+            <div class="section-2 jumbotron">                        
+                <form class="form" action="javascript:void(0)" id="form">
+                <div class="enter-section">
+                    <label for="enter">
+                        Enter Subject Name
+                    </label>
+                    <input id="enter" type="text" placeholder="Eg: Mathematics" required>
+                    <label for="done">
+                        Attended
+                    </label>
+                    <input name="done" type="radio" id="Attended" required>
+                    <label for="done">
+                        Bunked
+                    </label>
+                    <input name="done" type="radio" id="Bunked" required>
+                    <br>
+                    <label id="date">
+                        Lecture Date:
+                    </label>
+                    <input id="date" type="datetime-local" placeholder="Deadline" >
+                </div>
+                    <input type="submit" id="submit" value="Set attendance">
+                    <select >
+                        <option value="complete">
+                            Above 75%
+                        </option>
+                        <option value="Pending">
+                            Below 75%
+                        </option>
+                        <option value="All">
+                            All 
+                        </option>
+                    </select>
+                </form>
+                
+                <ul class="list" id="list">
+                   <li>
+                       Mathematics
+                       <span>
+                           bunked
+                       </span>
+                   </li>
+                </ul>
+            </div>
 
         <div class="footer">
             <h1>CONTACT US</h1>

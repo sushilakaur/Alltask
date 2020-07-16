@@ -113,7 +113,7 @@ body{
     width: 100% !important;
     height: 75vh;
     margin-top: 10%;
-    margin-bottom: 40%;
+    margin-bottom: 20%;
     align-content: center;
 }
 
@@ -135,6 +135,71 @@ body{
     font-size: 64px;
     color: #fff;
     padding: 15px 15px;
+}
+
+.jumbotron{
+    background-color: #0b8d96 !important;
+    width: 60%;
+    height: 50%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.section-2{
+    margin-top: 1%;
+    margin-bottom: 100em;
+    margin-left : 20% !important;
+}
+
+label{
+    color: #F7F9F9;
+    font-size: 3vh;
+    text-align: center;
+}
+
+input{
+    background:#F7F9F9 ;
+    border-radius: 0.3cm;
+    border: transparent;
+    margin: 30px;
+    padding: 3px;
+}
+
+input[type='submit'] {
+    padding: 5px;
+    margin: 2%;
+}
+
+select {
+    background:#F7F9F9 ;
+    padding: 5px;
+    border-radius: 0.3cm;
+    border: transparent;
+    margin: 20px;
+    padding: 3px;
+}
+
+.list ul {
+    list-style: none !important;
+    margin-top: 1.5em;
+    margin-bottom: 40%;
+}
+
+.list li {
+    text-align: left;
+    list-style-type: disc;
+    padding: 10px;
+    background: rgba(2, 67, 83, 0.589);
+    background-position: left !important;
+    margin: 6px;
+    transition: transform 0.5s;
+    color: #F7F9F9;
+    /* text-shadow: 1px 1px 1px black; */
+}
+
+span{
+    float: right;
 }
 
 .footer{
