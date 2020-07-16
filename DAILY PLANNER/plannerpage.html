@@ -4,12 +4,15 @@
         <link rel="stylesheet" href="plannerstyle.css">
         <link 
             rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
             crossorigin="anonymous">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <meta name="viewport" content='width=device-width, initial-scale=1'>
         <title>
             DAILY PLANNER
@@ -47,7 +50,6 @@
             <h1>
                 DAILY PLANNER
             </h1>
-        <div class="buttons"></div>
             <ul class="header-list">
                 <li>
                     <a href="#to-do-link">
@@ -55,23 +57,19 @@
                             To - Do List
                         </button>
                     </a>
+                    <img src="pictures/multitask-04.png" class="floatright">
                 </li>
-                <!-- <li>
-                    <button type="button" class="habit-btn">
-                        Habit Tracker
-                    </button>
-                </li> -->
                 <li>
                     <a href="#goal-link">
                         <button type="button" class="goals">
-                            Goals and Events
+                            Goal Tracker
                         </button>   
                      </a>
                 </li>               
             </ul>
-            <div class="task-pic">
-                <img src="pictures/multitask-04.png">
-            </div> 
+            
+                <!-- <img src="pictures/multitask-04.png" class="floatright"> -->
+            
         </div>
             
         </div>
@@ -84,46 +82,64 @@
                 </div>
             </div>
         </div>
-
-<!-- todo javascript -->
-
-
-        <div class="content" id="kritikTodo">
-            <p>TODAY'S TODO LIST<i class="fa fa-plus"></i></p>
-                <input type="text" placeholder="Add a new TODO">
-                <!-- <button id="add"><i class="fa fa-plus"></i></button> -->
-            
-            <div class="todo_container">
-            <ul class="todo_list" id="lists">
-                <li><span><i class="fa fa-trash"></i></span> NodeJS</li>
-                <li><span><i class="fa fa-trash"></i></span> ReactJS</li>
-                <li><span><i class="fa fa-trash"></i></span> MongoDB</li>
-            </ul>
-            </div>
-        </div>
-       
-    
-    
-    
-    
-    
     </div>
-<!-- 
-        <div class="habit-tracker img parallax">
-            <div class="middle">
-                <div class="text">
-                    Habit Tracker
-                </div>
-            </div>
-        </div> -->
     
+    <div class="content" id="kritikTodo">
+        <p>TODAY'S TODO LIST<i class="fa fa-plus"></i></p>
+            <input type="text" placeholder="Add a new TODO">
+            <!-- <button id="add"><i class="fa fa-plus"></i></button> -->
+        
+        <div class="todo_container">
+        <ul class="todo_list" id="lists">
+            <li><span><i class="fa fa-trash"></i></span> NodeJS</li>
+            <li><span><i class="fa fa-trash"></i></span> ReactJS</li>
+            <li><span><i class="fa fa-trash"></i></span> MongoDB</li>
+        </ul>
+        </div>
+    </div>
+
     <div id="goal-link">
         <div class="event img parallax">
             <div class="middle">
                 <div class="text">
                     Goal Tracker
                 </div>
-            </div>
+            </div>    
+            <h3 class="heading">
+                GOAL SETTER
+            </h3>
+            
+                <div class="section-goal jumbotron">                        
+                    <form class="goal-setter" action="javascript:void(0)" id="form">
+                    <div class="enter-section">
+                        <label id="enter">
+                            Enter your Goals:
+                        </label>
+                        <input id="enter" type="text" placeholder="Eg: Digital Detox" required>
+                        <label id="date">
+                            Select the Deadline:
+                        </label>
+                        <input id="date" type="datetime-local" placeholder="Deadline" >
+                    </div>
+                        <input type="submit" id="submit" value="Set as Goal">
+                        <select >
+                            <option value="Completed">
+                                GOAL COMPLETED
+                            </option>
+                            <option value="Pending">
+                                PENDING
+                            </option>
+                            <option value="All">
+                                All 
+                            </option>
+                        </select>
+                    </form>
+
+                    <ul class="list" id="list">
+                       
+                    </ul>
+                </div>
+            
         </div>
     </div>
 
@@ -135,5 +151,7 @@
           </div>
           
         <script src="plannerscript.js"></script>
+        <!-- <script src="goalscript.js"></script> -->
     </body>
 </html>
+
