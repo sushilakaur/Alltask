@@ -217,11 +217,52 @@ span{
 
  .subjectName, .daysAttended, .totalDays, .percentage, .checkBoxes {
     float: left;
+    position: relative;
 }
 
-.daysAttended, .totalDays, .percentage, .checkBoxes {
+.subjectName{
+    max-width: fit-content;
+}
+
+.checkBoxes {
+    margin-left: 30px;
+}
+
+.daysAttended{
+    float: left;
+    margin-left: 100px;
+}
+
+.totalDays{
+    float: left;
+    margin-left: 120px;
+}
+
+.percentage{
+    float: left;
     margin-left: 90px;
 }
+
+.headings .subject{
+    float: left;
+    margin-left: 50px;
+}
+
+.headings .days{
+    float: left;
+    margin-left: 30%;
+}
+
+.headings .total{
+    float: left;
+    margin-left: 20px;
+}
+
+.headings .per{
+    float: left;
+    margin-left: 20px;
+}
+
 
 .headings {
     /* margin-left: 50px; */
@@ -234,7 +275,6 @@ span{
     color:#e32;
     font-weight: bold;
 }
-
 
 .footer{
     margin-top: 40%;
