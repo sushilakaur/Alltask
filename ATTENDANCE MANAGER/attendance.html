@@ -78,9 +78,16 @@
                 <div class="enter-section">
                     <label for="enter">
                         Enter Subject Name
+                    </label> 
+                    <input id="enter" class="subject" type="text" placeholder="Eg: Mathematics" required>
+                    <br>
+                    <label for="enter">
+                        Enter the minimum attendance required (in %) 
                     </label>
-                    <input id="enter" type="text" placeholder="Eg: Mathematics" required>
-                    <label for="done">
+                    <input type="text" id="id" placeholder="75" required> <br>
+                    <button type="submit" form="nameform" class="add" value="Add">Add</button>
+
+                    <!-- <label for="done">
                         Attended
                     </label>
                     <input name="done" type="radio" id="Attended" required>
@@ -88,13 +95,13 @@
                         Bunked
                     </label>
                     <input name="done" type="radio" id="Bunked" required>
-                    <br>
-                    <label id="date">
+                    <br> -->
+                    <!-- <label id="date">
                         Lecture Date:
                     </label>
-                    <input id="date" type="datetime-local" placeholder="Deadline" >
+                    <input id="date" type="datetime-local" placeholder="Deadline" > -->
                 </div>
-                    <input type="submit" id="submit" value="Set attendance">
+                    <!-- <input type="submit" id="submit" value="Set attendance">
                     <select >
                         <option value="complete">
                             Above 75%
@@ -105,16 +112,33 @@
                         <option value="All">
                             All 
                         </option>
-                    </select>
+                    </select> -->
                 </form>
                 
+                <div class="headings">
+                    <div class="subjectName"> Subject Name </div>
+                    <div class="daysAttended"> Classes Attended </div>
+                    <div class="totalDays"> Total Classes </div>
+                    <div class="percentage"> Percentage </div>
+                </div>
+
                 <ul class="list" id="list">
-                   <li>
-                       Mathematics
-                       <span>
-                           bunked
-                       </span>
-                   </li>
+                    <li id="0">
+                        <div class="subjectName"> Mathematics </div>
+                        <div class="daysAttended"> 8 </div>
+                        <div class="totalDays"> 10 </div>
+                        <div class="percentage"> 80% </div>
+                        <div class="checkBoxes">
+                            <label for="done">
+                                Attended
+                            </label>
+                            <input name="done" type="radio" id="Attended" required>
+                            <label for="done">
+                                Bunked
+                            </label>
+                            <input name="done" type="radio" id="Bunked" required>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
