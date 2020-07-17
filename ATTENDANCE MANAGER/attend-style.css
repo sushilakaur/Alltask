@@ -225,7 +225,8 @@ span{
 }
 
 .checkBoxes {
-    margin-left: 30px;
+    float: right;
+    margin-right: 10px;;
 }
 
 .daysAttended{
@@ -243,14 +244,14 @@ span{
     margin-left: 90px;
 }
 
-.headings .subject{
+.headings .subject_name{
     float: left;
     margin-left: 50px;
 }
 
 .headings .days{
     float: left;
-    margin-left: 30%;
+    margin-left: 20px;
 }
 
 .headings .total{
@@ -271,7 +272,7 @@ span{
     margin-top: 50px;
 }
 
-.less-percentage {
+.min-percentage {
     color:#e32;
     font-weight: bold;
 }
