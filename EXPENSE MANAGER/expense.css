@@ -5,12 +5,12 @@
 body {
     background-color: #f7f9f9;
 }
-
+a
 .nav {
-    position: fixed;
+    /* position: fixed; */
     margin-top: 0;
     width: 100%;
-    height: 10%;
+    height: 62.5px;
     align-content: center;
     background-color: #0b8d96;
 }
@@ -61,12 +61,10 @@ body {
 
 .container h3{
     text-align: center;
-    color: #f7f9f9;
-    font-size: 300%;
+    color: #0b8d96;
     font-family: sans-serif;
     font-weight: bold;
     margin-bottom: 5%;
-    padding-top: 15vh;
 }
 
 .container h1:hover {
@@ -86,15 +84,9 @@ body {
     margin-bottom: 10%;
 }
 
-.month {
-    background-image: url(pictures/bills-05.png);
-    text-align: center;
-    align-items: center;
-    margin-top: 15%;
-}
 
 .left-container{
-    height: 100vh;
+    height: 650px;
     background-image: url(pictures/website1-03.png);
     background-size: cover;
     background-position: center;
@@ -105,6 +97,59 @@ body {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     float: left;
+}
+
+.balance {
+    margin-top: 20% !important;
+    margin : 10px;
+    text-align: center;
+}
+
+.balance-title {
+    font-size: 55px;
+    color: #f7f9f9;
+    /* padding-left: 5% !important; */
+    padding: 2%;
+    font-weight: bold;
+}
+
+.balance-value {
+    font-size: 40px;
+    color : #f7f9f9;
+    /* padding-left: 5% !important; */
+    font-weight: lighter;
+}
+
+.text {
+    color : #f7f9f9;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.value {
+    color: #f7f9f9;
+    font-size: 20px;
+    font-weight: light;
+}
+
+.expense-amount {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.income-amount {
+    float: right;
+    margin-right: 10px;
+    text-align: center
+}
+
+.investment-amount {
+    position: absolute;
+    align-self : center;
+    margin-top: 60px;
+    margin-left: 130px;
+    text-align: center;
 }
 
 .right-container {
@@ -130,7 +175,7 @@ body {
     margin-left: 20px;
 }
 
-.toggle .expense-tab, .income-tab, .all-tab{
+.toggle .expense-tab, .income-tab, .all-tab, .investment-tab{
     display: inline-block;
     cursor: pointer;
     font-size: 30px;
@@ -139,7 +184,7 @@ body {
     opacity: 0.4;
 }
 
-.toggle .income-tab, .all-tab{
+.toggle .income-tab, .all-tab, .investment-tab{
     margin-left: 10px;
 }
 
@@ -168,7 +213,7 @@ body {
 }
 
 .right-container #expense-list .input{
-    position: absolute;
+    /* position: absolute; */
     display: block;
     width: auto;
     bottom: 0;
@@ -186,8 +231,7 @@ body {
     padding-left: 10px;
     font-size: 20px;
     font-family: sans-serif;
-    margin: 5px;
-    margin-left: 10px;
+    margin: 5px 10px 5px 10px;
     border-radius: 10px 0 0 10px;
     border: none;
 }
@@ -206,7 +250,7 @@ body {
 
 .right-container #expense-list .input .add-expense img{
     width: 40px;
-    height: 40px;
+    height:40px;
     cursor: pointer;
 }
 
@@ -217,7 +261,7 @@ body {
     margin: 0;
     padding: 0;
     margin-top:20px;
-    overflow-x: auto;
+    overflow-y: scroll;
 }
 
 .right-container #expense-list ul.list li{
@@ -240,16 +284,6 @@ body {
     color: #f0624d;
 }
 
-.right-container #expense-list ul.list li #edit{
-    position: absolute;
-    width:20px;
-    height: 20px;
-    right: 50px;
-    cursor: pointer;
-    background-image: url("pictures/edit-07.png");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-}
 
 .right-container #expense-list ul.list li #delete{
     position: absolute;
@@ -262,6 +296,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.right-container #expense-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: #f0624d;
+}
+
+
 /* /////// INCOME //////// */
 
 .right-container #income-list{
@@ -271,9 +314,9 @@ body {
 }
 
 .right-container #income-list .input{
-    position: absolute;
+    /* position: absolute; */
     display: block;
-    width: 360px;
+    width: auto;
     bottom: 0;
     border-top: 1px solid #ccc;
 }
@@ -289,8 +332,7 @@ body {
     padding-left: 10px;
     font-size: 20px;
     font-family: sans-serif;
-    margin: 5px;
-    margin-left: 10px;
+    margin: 5px 10px 5px 10px;
     border-radius: 10px 0 0 10px;
     border: none;
 }
@@ -302,8 +344,8 @@ body {
     font-size: 20px;
     font-family: sans-serif;
     margin: 5px;
-    margin-left: 10px;
-    border-radius: 10px 0 0 10px;
+    margin-left: -10px;
+    border-radius: 0 10px 10px 0;
     border: none;
 }
 
@@ -314,18 +356,18 @@ body {
 }
 
 .right-container #income-list ul{
-    width: 360px;
+    width: auto;
     height: 285px;
     list-style: none;
     margin: 0;
     padding: 0;
     margin-top:20px;
-    overflow-x: auto;
+    overflow-y: scroll;
 }
 
 .right-container #income-list ul.list li{
     position: relative;
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .right-container #income-list ul.list li *{
@@ -335,23 +377,20 @@ body {
 }
 
 .right-container #income-list ul.list li .entry{
-    width:250px;
     height: auto;
     padding-left: 20px;
     margin-bottom: 10px;;
     word-wrap: break-word;
-    font-family: 'Gilroy Bold';
+    font-family: sans-serif;
+    color: green;
 }
 
-.right-container #income-list ul.list li #edit{
-    position: absolute;
-    width:20px;
-    height: 20px;
-    right: 50px;
-    cursor: pointer;
-    background-image: url("pictures/edit-07.png");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
+.right-container #income-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: green;
 }
 
 .right-container #income-list ul.list li #delete{
@@ -365,6 +404,105 @@ body {
     background-repeat: no-repeat;
 }
 
+/* //////// INVESTMENT ////////// */
+.right-container #investment-list{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.right-container #investment-list .input{
+    /* position: absolute; */
+    display: block;
+    width: auto;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
+
+.right-container #investment-list .input *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-container #investment-list .input input#investment-title-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.right-container #investment-list .input input#investment-amount-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px;
+    margin-left: -10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.right-container #investment-list .input .add-investment img{
+    width: 40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.right-container #investment-list ul{
+    width: auto;
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+    overflow-y: scroll;
+}
+
+.right-container #investment-list ul.list li{
+    position: relative;
+    font-size: 20px;
+}
+
+.right-container #investment-list ul.list li *{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.right-container #investment-list ul.list li .entry{
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: #fedc56;
+}
+
+.right-container #investment-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: #fedc56;
+}
+
+.right-container #investment-list ul.list li #delete{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('pictures/trash-07.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+
 /* ////////// ALL ///////////// */
 .right-container #all-list{
     width: auto;
@@ -372,11 +510,12 @@ body {
     position: relative;
 }
 .right-container #all-list ul{
+    height: 285px;
     list-style: none;
     margin: 0;
     padding: 0;
     margin-top:20px;
-    overflow-x: auto;
+    overflow-y: scroll;
 }
 
 .right-container #all-list ul.list li{
@@ -397,13 +536,29 @@ body {
     font-family: sans-serif;
 }
 
-.right-container #all-list ul.list li #edit{
-    visibility: hidden;
+.right-container #all-list ul.list li.expense{
+    color : #f0624d;
 }
+
+.right-container #all-list ul.list li.income {
+    color : green;
+}
+
+.right-container #all-list ul.list li.investment {
+    color: #fcd12a;
+}
+
+.right-container #all-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-family:sans-serif;
+}
+
 
 .right-container #all-list ul.list li #delete{
     position: absolute;
-    width: 8px;
+    width: 20px;
     height: 20px;
     right: 20px;
     cursor: pointer;
@@ -416,7 +571,6 @@ body {
 .right-container #all-list ul.list li.expense-list{ /*If this isnt working, .expense*/
     color: #f0624d;
 }
-
 
 
 /* .footer{
@@ -432,4 +586,11 @@ body {
 
 .footer h1{
     padding-bottom: 3%;
-} */
+}  */
+
+
+.pie-chart {
+    z-index: 1;
+    margin-top: 150px;
+    align-items : center;
+}
