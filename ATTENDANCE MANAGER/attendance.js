@@ -3,23 +3,36 @@ const addSubject = document.querySelector('.add'); //Add function
 const list = document.querySelector('.list'); //list to be printed
 const minPercentage = document.querySelector('.minPercent');
 
-let subjectList =[];
+let subjectList = JSON.parse(localStorage.getItem("details")) || [];
+
+showDetails();
 
 
-addSubject.addEventListener("click", AddSubjectFunc);
-// minPercentage.addEventListener("keyup", function(event) {
-//     console.log(event);
-//     if (event.key === "Enter"){
-//         AddSubjectFunc();
-//     }
-// });
+addSubject.addEventListener("click", function(){
+    if (subject.value==="" || minPercentage.value==="") {
+        alert("Please enter a valid value!");
+    }
+    else {
+        AddSubjectFunc();
+    }
+});
+minPercentage.addEventListener("keyup", function(event) {
+    if (event.key === "Enter"){
+        if (subject.value==="" || minPercentage.value==="") {
+            alert("Please enter a valid value!");
+        }
+        else {
+            AddSubjectFunc();
+        }
+    }
+});
 
-// addSubject.addEventListener("invalid", function() {
+// minPercentage.addEventListener("invalid", function() {
 //     alert("Enter a valid name");
 // });
 
+
 function AddSubjectFunc() {
-    console.log("Working");
     let subjectDetails = {
         subjectName : subject.value,
         daysAttended : 0,
@@ -34,7 +47,7 @@ function AddSubjectFunc() {
 
 console.log(subjectList);
 
-function showDetails() {
+function showDetails(value) {
     clearList();
     subjectList.forEach( (subjectDetails, index) => {
         const entry = `<li id="${index}">
@@ -53,11 +66,22 @@ function showDetails() {
                             </label>
                             <input name="done" type="radio" id="Bunked" required>
                         </div>
+                        <div id="delete"></div>
                         </li>`
         list.insertAdjacentHTML ("afterBegin", entry);
-    })
+        if (subjectDetails.totalDays != 0) {
+        if (parseFloat(subjectDetails.percentage) < subjectDetails.min_percent) {
+            console.log("adding");
+            document.querySelector('.percentage').classList.add('min-percentage');
+        }
+        else{
+            console.log("removing");
+            document.querySelector('.percentage').classList.remove('min-percentage');
 
-    //localStorage.setItem("details", JSON.stringify(subjectList));
+        }
+    }
+    })
+    localStorage.setItem("details", JSON.stringify(subjectList));
 }
 
 list.addEventListener("click", function(event) {
@@ -68,28 +92,27 @@ list.addEventListener("click", function(event) {
         subjectList[event.path[2].id].daysAttended++;
         var tDays =subjectList[event.path[2].id].totalDays;
         var attended= subjectList[event.path[2].id].daysAttended;
-        var minimumPercent = subjectList[event.path[2].id].min_percent;
+        // var minimumPercent = subjectList[event.path[2].id].min_percent;
         subjectList[event.path[2].id].percentage = parseFloat((attended/tDays)*100).toFixed(2);
-        if (subjectList[event.path[2].id].percentage <minPercentage) {
-            event.path[0].parentNode.previousElementSibling.classList.add('.min-percentage');
-        }
-        else {
-            event.path[0].parentNode.previousElementSibling.classList.remove('.min-percentage');
-        }
+        // if (subjectList[event.path[2].id].percentage <minimumPercent) {
+        //     event.path[0].parentNode.previousElementSibling.classList.add('.min-percentage');
+        // }
+        // else {
+        //     event.path[0].parentNode.previousElementSibling.classList.remove('.min-percentage');
+        // }
     }
-    if (event.path[0].id == "Bunked") {
+    else if (event.path[0].id == "Bunked") {
         subjectList[event.path[2].id].totalDays++;
         var tDays =subjectList[event.path[2].id].totalDays;
         var attended= subjectList[event.path[2].id].daysAttended;
-        console.log(event.path[0].parentNode.previousElementSibling);
+        //var minimumPercent = subjectList[event.path[2].id].min_percent;
         subjectList[event.path[2].id].percentage = parseFloat((attended/tDays)*100).toFixed(2);
-        if (subjectList[event.path[2].id].percentage < minPercentage) {
-            console.log("working");
-            event.path[0].parentNode.previousElementSibling.style.color= "red";
-        }
-        else {
-            event.path[0].parentNode.previousElementSibling.classList.remove('min-percentage');
-        }
+        // if (subjectList[event.path[2].id].percentage < minimumPercent) {
+        //     x=1;
+        // }
+        // else {
+        //     event.path[0].parentNode.previousElementSibling.classList.remove('min-percentage');
+        // }
     }
     clearList();
     showDetails();
@@ -103,4 +126,18 @@ function clear( inputs) {
 
 function clearList(x) {
    list.innerHTML="";
+}
+
+list.addEventListener("click", Delete);
+
+
+function Delete(event){
+    // const targetBtn = event.target;
+    // const entry = targetBtn.parentNode;
+      console.log(event.path[1].id);
+    if( event.target.id == "delete" ){
+        subjectList.splice( event.path[1].id, 1);
+        clearList();
+        showDetails();
+    }
 }
