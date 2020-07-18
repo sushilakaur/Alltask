@@ -13,6 +13,7 @@ body{
     height: 10%;
     align-content: center;
     background-color: #0b8d96;
+    z-index: 1;
 }
 
 .nav ul{
@@ -112,13 +113,14 @@ body{
     margin-left: 0;
     width: 100% !important;
     height: 75vh;
-    margin-top: 10%;
-    margin-bottom: 20%;
+    margin-top: 3%;
+    margin-bottom: 10%;
     align-content: center;
 }
 
 .attend {
-    background-image : url(pictures/attend-05.png);    
+    background-image : url(pictures/attend-05.png);   
+
 }
 
 .middle {
@@ -207,7 +209,7 @@ select {
     margin: 6px;
     transition: transform 0.5s;
     color: #F7F9F9;
-    width: 700px;
+    width: 750px;
     /* text-shadow: 1px 1px 1px black; */
 }
 
@@ -226,7 +228,7 @@ span{
 
 .checkBoxes {
     float: right;
-    margin-right: 10px;;
+    margin-right: 70px;;
 }
 
 .daysAttended{
@@ -290,4 +292,19 @@ span{
 
 .footer h1{
     padding-bottom: 3%;
+}
+
+#delete {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('pictures/trash-07.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    /* background-color: rgba(2, 67, 83, 0.589); */
+    margin-inline-end: 255px;
+    /* margin-top : 0px !important;
+    align-content: center; */
 }
